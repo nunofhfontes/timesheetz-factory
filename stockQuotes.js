@@ -1,4 +1,4 @@
-gfvar express = require('express');
+var express = require('express');
 var request = require('request');
 var elasticsearch = require('elasticsearch');
 var client = require('./elasticSearchConnection.js');
@@ -21,6 +21,7 @@ client.ping({
      }
  });
 
+
 client.cluster.health({},function(err,resp,status) {
    console.log("-- Client Health --",resp);
  });
@@ -32,6 +33,7 @@ request(stockQuotesApiUrl, function (error, response, body) {
     //console.log(body) // Print the google web page.
     var apiResponse = body;
     console.log('typeof ----->> ',typeof apiResponse);
+    console.log(apiResponse);
   }else{
     console.log("ERROR");
   }

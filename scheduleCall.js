@@ -11,6 +11,6 @@ var stocks = require('./stockQuotes');
 var cronJob = cron.schedule('*/5 * * * * *', function(){
     // perform operation e.g. GET request http.get() etc.
     console.info('cron job running');
-    stocks.getData();
+    //stocks.getData();
 });
 cronJob.start();
