@@ -12,9 +12,18 @@
     "node-cron": "^1.2.1",
     "npm": "^5.8.0",
     "react": "^16.4.2",
+    "react-dom": "^16.4.2",
     "request": "^2.85.0"
   },
   "devDependencies": {
+    "babel-install": "2.1.0",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "webpack": "^4.17.1",
+    "webpack-cli": "^3.1.0",
     "nodemon": "^1.18.3"
   },
   "scripts": {
